@@ -252,6 +252,8 @@ class Tally:
         if self.config is None:
             return
         
+        file.write(self.mode_card + "\n")
+        
         for id, value in self.config.items():
             file.write(f"fmesh{id}4:{value['particle']} geom=XYZ origin={self.mesh_origin[0]:.3f} {self.mesh_origin[1]:.3f} {self.mesh_origin[2]:.3f}\n")
             file.write(f"     imesh={self.mesh_limit[0]:.3f} iints={self.size[0]}\n")

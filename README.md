@@ -2,6 +2,10 @@
 
 A script used to convert CT(nii) files to MCNP input files. Your must supply a tmol file which must contain `mode` card and `material` card. `examole.toml` is a template file.
 
+# Requirements
+
+numpy, SimpleITK, toml
+
 # How to use
 
 ```
@@ -12,7 +16,7 @@ python main.py -c path/to/your/toml/file -d directory/to/save/inp
 
 1. ct \
    path to your CT(nii) file(s).
-2. Mode 
+2. Mode \
    It is used for MCNP `mode` card. It is a string array.
 3. Material \
    It is used to convert CT images to voxels. You should type `[material.id]` for each material. `id` is the group and is used to generate `Mn` in MCNP.

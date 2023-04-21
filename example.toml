@@ -1,4 +1,4 @@
-ct = 'C:\User\CT.nii.gz'
+ct = 'F:\4DCT\4DCT_dataset\201982\CT_0.nii.gz'
 # ct = ['C:\User\CT1.nii.gz', 'C:\User\CT2.nii.gz']
 mode = ['n', 'p']
 
@@ -34,11 +34,8 @@ fraction = [ -0.11, -0.458, -0.015, -0.411, -0.001, -0.001, -0.002, -0.002,]
 
 [source]
 pos = [1, 2, 3]
-erg = {si = [
-1, 2, 3, 4
-], sp = [
-5, 6, 7, 8
-]}
+erg.si = []
+erg.sp = []
 
 [tally.1]
 fm = 20
